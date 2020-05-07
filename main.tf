@@ -1,3 +1,6 @@
+locals{
+  region="${var.region}"
+}
 resource "aws_vpc" "module_vpc" {
   cidr_block = "${var.vpc_cidr_block}"
 }
