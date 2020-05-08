@@ -1,4 +1,4 @@
-locals{
+locals {
   region="${var.region}"
 }
 resource "aws_vpc" "module_vpc" {
