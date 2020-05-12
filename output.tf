@@ -1,5 +1,5 @@
 output "ip" {
-  value = "${join(",", aws_instance.testInstance.*.private_ip)}"
+  value = "${join(",", aws_instance.testInstance.*.public_ip)}"
 }
 
 output "subnetid" {
